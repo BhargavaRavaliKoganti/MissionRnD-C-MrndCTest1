@@ -26,8 +26,25 @@ Difficulty : Hard
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-
+int subString(char *, char *);
 char * concat_4strings(char *s1, char *s2, char *s3, char *s4){
-	//Return the new string created.
-	return NULL;
+	if (s1 == NULL && s2 == NULL && s3 == NULL && s4 == NULL)
+		return NULL;
+}
+
+
+int subString(char *s1, char *s2) {
+	int i = 0;
+	int j = 0;
+	while (s1[i] != '\0') {
+		while (s1[i] != s2[0] && s1[i] != '\0')
+			i++;
+		if (s1[i] == '\0')
+			return 0;
+		while (s1[i] == s2[j] && s1[i] != '\0' && s2[j] != '\0') {
+			i++;
+			j++;
+		}
+		
+	}
 }

@@ -32,6 +32,7 @@ Difficulty : Medium
 #include <math.h>
 
 int * find_sequences(int *arr, int len){
+	if (len <= 0 || arr == NULL)
+		return NULL;
 	//Return final array which has 6indexes [AP1_S,AP1_E,AP2_S,AP2_E,GP1_S,GP2_E]
-	return NULL;
 }
